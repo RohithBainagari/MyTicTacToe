@@ -145,5 +145,7 @@ nav ul{
         /* background-color:beige; */
         /* border: 5px solid black; */
     }
-    
+    .line{
+     display:none;
+    }
 }
