@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@300;500&family=Roboto:ital@1&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@300;500&family=Roboto:ital@1&family=Ubuntu:ital@1&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background-color: black;
+    color: aliceblue;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    list-style-type: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+    padding: 0 12px;
+}
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* background-color: aqua; */
+    height: 80vh;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    position: relative;
+    padding-top: 20px;
+    height: 60vh;
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns:repeat(3,10vw) ;
+    /* background-color:beige; */
+    /* border: 5px solid black; */
+}
+.box{
+    border: 3px solid black ;
+}
+.box:hover{
+    background-color:rgb(172, 167, 167);
+}
+.title{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 50px;
+    margin-top: 20px;
+    font-weight: bolder;
+    height: fit-content;
+    padding: 5px 5px;
+}
+.info{
+    /* background-color: blue; */
+    height: fit-content;
+    padding: 5px 52px;
+    /* position: relative;
+    right: 35vh;
+    top: 15vh */
+}
+.playerTurn{
+   color: cornflowerblue;
+}
+.reset{
+    margin-top: 10px;
+    padding: 3px 3px;
+    border-radius: 20%;
+    /* color: cornflowerblue; */
+}
+.gif { 
+    padding-left: 20px;
+    width: 0px;
+    transition: 2s ease-in-out;
+}
+.winInfo{
+    /* padding-left: 47px; */
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+    margin-top: 3px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.coin{
+    font-family: 'Roboto', sans-serif;
+    color: cornflowerblue;
+    font-size: 20vh
+}
+.bb-0{
+    border-bottom: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.container2{
+    margin-top: 0px;
+}
+.line{
+    height: 3px;
+    width: 0vw;  
+    background-color: black;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 35px;
+    transition: width 1s ease-in-out;
+}
+@media screen and (max-width: 1000px){
+    .coin {
+        font-family: 'Roboto', sans-serif;
+        color: cornflowerblue;
+        font-size: 10vh;
+    }
+}
+@media screen and (max-width: 500px){
+    .coin {
+        font-family: 'Roboto', sans-serif;
+        color: cornflowerblue;
+        font-size: 4vh;
+    }
+}
+@media screen and (max-width: 400px) {
+    .gameContainer{
+        display: flex;
+        flex-direction:column;
+        /* justify-content: center; 
+        /* align-items: center; */
+        /* background-color: aqua; */
+        height: 80vh;
+        font-family: 'Roboto', sans-serif;
+    }
+    .container{
+        padding-top: 120px;
+        margin-left: 70px;
+        height: 60vh;
+        display: grid;
+        grid-template-rows: repeat(3,20vw);
+        grid-template-columns:repeat(3,20vw) ;
+        /* background-color:beige; */
+        /* border: 5px solid black; */
+    }
+    
+}
